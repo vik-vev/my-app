@@ -1,0 +1,100 @@
+$item-width: 40%;
+$viewer-distance: 500px;
+
+
+.carousel {
+  padding: 20px;
+  height: 100%;
+	perspective: $viewer-distance;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+   > * {
+     flex: 0 0 auto;
+  }
+
+  figure {
+    transform-style: preserve-3d;
+    width: $item-width;
+    height: 100%;
+    margin: 0;
+    transition: transform 0.5s ease-out;
+
+    .tileDiv {
+      width: 100%;
+      height: 100%;
+      box-sizing: border-box;
+
+      img {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 40px;
+        opacity: 0.9;
+      }
+
+      .tileContent{
+        border-radius: 60px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        opacity: 0.9;
+        color: white;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0,0,0,0.2);
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      &:not(:first-of-type) {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 0;
+    
+    .icon {
+      flex: 0 0 auto;
+      margin: 0 5px;
+      cursor: pointer; 
+      color: #333;
+      background: none;
+      padding: 5px 10px;
+      &:hover{
+        background-color: rgba(255,255,255,0.2);
+      }
+    }
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+.formItemWrapper{
+  border: solid 3px yellow;
+}

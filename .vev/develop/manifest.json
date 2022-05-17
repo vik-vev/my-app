@@ -1,0 +1,71 @@
+{
+  "key": "ZBLyBjtsuHdvPG4wiDvV",
+  "children": [
+    {
+      "widgetName": "Photo 360",
+      "formSchema": [
+        {
+          "type": "image",
+          "name": "img"
+        }
+      ],
+      "widgetId": "ZBLyBjtsuHdvPG4wiDvV_PhotoThreeSixy",
+      "type": 0,
+      "widgetFuncName": "PhotoThreeSixy",
+      "categories": [
+        "Localhost"
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "transform": {
+        "width": 100,
+        "height": 100
+      }
+    },
+    {
+      "widgetName": "3D Carousel",
+      "formSchema": [
+        {
+          "type": "number",
+          "name": "tileGap",
+          "title": "Tile gap (px)",
+          "initialValue": 60
+        },
+        {
+          "type": "array",
+          "name": "items",
+          "of": [
+            {
+              "type": "image",
+              "name": "img"
+            },
+            {
+              "type": "string",
+              "name": "title"
+            },
+            {
+              "type": "string",
+              "name": "description"
+            }
+          ]
+        }
+      ],
+      "widgetId": "ZBLyBjtsuHdvPG4wiDvV_ThreeCarousel",
+      "type": 0,
+      "widgetFuncName": "ThreeCarousel",
+      "categories": [
+        "Localhost"
+      ],
+      "size": [
+        3,
+        3
+      ],
+      "transform": {
+        "width": 100,
+        "height": 100
+      }
+    }
+  ]
+}
